@@ -1,17 +1,38 @@
-# This repository contains MRI research code
+# MRI Research Project
 
-Languages used:
+This repository contains research code for MRI sequence development and reconstruction.
 
-- MATLAB: MRI sequences and reconstruction
-- Python: processing pipelines and analysis
-- Julia: high-performance numerical routines
+## Languages and roles
 
-Guidelines:
+- MATLAB:
+  - MRI sequences (IDEA)
+  - Pulseq for MRI sequences design
+  - Raw reconstruction
 
-- Prefer Python for orchestration
-- Use MATLAB only for sequence-specific logic
-- Use Julia for performance-critical code
+- Python:
+  - Data processing
+  - Pypulseq for sequence design
+  - Pipelines
+  - Visualization
+  - Integration layer
 
-Data is stored in /data and should not be modified.
+- Julia:
+  - High-performance numerical routines
+  - Optimization and reconstruction experiments
+  - KomaMRI for MRI simulations
 
-Always explain changes before applying them.
+## Guidelines
+
+- Use Python as the main orchestration language
+- Do not rewrite MATLAB sequence logic unless necessary
+- Prefer Julia only for performance-critical parts
+- Keep functions modular and well-documented
+
+## Data
+
+- Do not modify raw data
+- Outputs should be reproducible
+
+## Goal
+
+Build reproducible MRI reconstruction pipelines combining MATLAB, Python, and Julia
