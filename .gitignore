@@ -1,5 +1,26 @@
-_pycache_/
+# ===== Python =====
+venv/
+__pycache__/
 *.pyc
-.DS_Store
+
+# ===== Data (MUY IMPORTANTE en MRI) =====
+#data/
 *.mat
+*.h5
+*.nii
+*.nii.gz
+
+# ===== MATLAB =====
+*.mex*
+*.asv
+
+# ===== Julia =====
+.julia/
+Manifest.toml
+
+# ===== Notebooks =====
+.ipynb_checkpoints/
+
+# ===== Sistema =====
+.DS_Store
 
